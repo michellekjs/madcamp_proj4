@@ -1,0 +1,14 @@
+.navbar-brand{
+  font-size:18px;
+  font-weight:bold;
+  padding:10px;
+}
+
+
+.navbar-item{
+  padding:5px;
+}
+
+.container{
+  width:1920px;
+}

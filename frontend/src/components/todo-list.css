@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    font-family: 'Open Sans', serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+  }
+
+  .todolist {
+    margin-left:300px;
+    margin-right:300px;
+  }
+  
+  .todolist .writebutton{
+    background-color: rgb(109, 194, 76);
+    color:white;
+    height:40px;
+    font-weight: bold;
+    border-radius: 10px;
+    border:none;
+    box-shadow:2px 2px 2px 2px;
+    position:absolute;
+    left:1480px;
+    top:90px;
+  }
+
+
