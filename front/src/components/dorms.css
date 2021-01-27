@@ -1,0 +1,45 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:10px;
+  }
+
+
+
+.dorm{
+  margin-top:10px;
+  left:50%;
+}
+
+.dormtab{
+  margin-left:300px;
+  margin-right:300px;
+  margin-bottom:20px;
+  margin-top:0px;
+  left:50%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.dormtab2{
+margin-left:300px;
+margin-right:300px;
+margin-bottom:20px;
+font-family:Arial, Helvetica, sans-serif;}
+
+.tab-item-wrapper{
+  margin-left:20px;
+  margin-top:30px;
+  margin-bottom:30px;
+  font-family:Arial, Helvetica, sans-serif;
+}
