@@ -10,12 +10,14 @@ import X19208 from "./components/fifth";
 import Dorm from "./components/dorms";
 import X192023 from "./components/mypage"
 import CreateTodo from "./components/create-todo.component";
-import EditTodo from "./components/edit-todo.component";
+//import EditTodo from "./components/edit-todo.component";
+import EditTodo from "./components/todocontents";
 import TodosList from "./components/todos-list.component";
 import CampusMap from "./components/campusmap";
 
 import CreateTodo2 from "./components/create-todo.component2";
-import EditTodo2 from "./components/edit-todo.component2";
+//import EditTodo2 from "./components/edit-todo.component2";
+import EditTodo2 from "./components/todocontents2";
 import TodosList2 from "./components/todos-list.component2";
 import { UserContext } from './UserContext';
 import LoginForm from "./components/LoginForm";
@@ -45,7 +47,7 @@ const App = () =>{
                   <Link to="/apply" className="nav-link"> 생활관 신청</Link>
                 </li>
                 <li className="navbar-item">
-                  <Link to="/board" className="nav-link">자유게시판</Link>
+                  <Link to="/board" className="nav-link">Notice</Link>
                 </li>
                 <li className="navbar-item">
                   <Link to="/board2" className="nav-link">수리유지보수</Link>
@@ -69,13 +71,13 @@ const App = () =>{
             <Route path = "/fifth" component ={X19208}/>
             <Route path = "/board" component = {TodosList}/>
             <Route path = "/create" component = {CreateTodo}/>
-            <Route path ="/edit" component={EditTodo}/>
+            <Route path ="/edit/:id" component={EditTodo}/>
             <Route path = "/dorm" component={Dorm}/>
             <Route path="/mypage" component ={X192023}/>
             
             <Route path = "/board2" component = {TodosList2}/>
             <Route path = "/create2" component = {CreateTodo2}/>
-            <Route path ="/edit2" component={EditTodo2}/>
+            <Route path ="/edit2/:id" component={EditTodo2}/>
             <Route path ="/campusmap" component={CampusMap}/>
             <Route path ="/todoContents" component={TodoContents}/>
           </UserContext.Provider>

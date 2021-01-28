@@ -21,7 +21,7 @@ export default class EditTodo2 extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/todos2/edit2'+this.props.match.params.id)
+        axios.get('http://192.249.18.234:5000/mongooseDB/todos2/edit'+this.props.match.params.id)
             .then(response => {
                 this.setState({
                     todo_description: response.data.todo_description,
@@ -68,7 +68,7 @@ export default class EditTodo2 extends Component {
             todo_completed: this.state.todo_completed
         };
         console.log(obj);
-        axios.post('http://localhost:5000/todos2/update/'+this.props.match.params.id, obj)
+        axios.post('http://192.249.18.234:5000/mongooseDB/todos2/update/'+this.props.match.params.id, obj)
             .then(res => console.log(res.data));
         
         this.props.history.push('/');

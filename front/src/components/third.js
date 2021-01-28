@@ -104,7 +104,6 @@ function X19206() {
 
   return (
       <div data-layer="a211a3cf-d85f-42b6-9d3f-08df5839c087" className="x19206">
-      <div data-layer="63e79938-adac-4f32-ab8e-7dab754bd25f" className="x60"></div>
       
       <button data-layer="cb6e3209-2668-4730-b6bf-0a4abfbcb0ed" className="xe4fd940e" onClick={nextPage}>신청하기</button>
       
@@ -131,7 +130,7 @@ function X19206() {
       </div>
 
       <div data-layer="a9c47cce-bd67-48fc-8443-9237eb56eec0" className="xf8b49063">생활관비</div>
-      <text className="money">{vitrualRoomState.cost}</text>
+      <text className="money">{vitrualRoomState.cost} 원 </text>
       
 
       <div data-layer="29f2e852-e4e5-4513-b269-bd9150849fef" className="x11fa90a0">

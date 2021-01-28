@@ -43,36 +43,42 @@ function X19209(){
     console.log(state);
     axios.post("http://192.249.18.234:5000/mongooseDB/virtualRoom/attend", state)
           .then((res) =>{
+            console.log("결과는?");
+            console.log(res);
             if(res.data.message === "failed"){
               alert("기본 정보를 다시 확인해주세요.");
             }
-
+            else{
+              alert("가상방 참여 완료되었습니다.");
+            }
           })
           .catch(err => {
             alert('정보를 다시 입력해주세요.');
           })
-
-    
   }
 
+  const nextPage=(e)=>{
+    history.push('./fifth');
+  }
 
   return (
     <div data-layer="5c76a024-e719-4f1a-9505-47aeaa0b8f66" className="x19209">        
     <div data-layer="8a987bc1-0551-48cb-adab-67bb632577bb" className="x482ce09d">계절학기 신청</div>
     <svg data-layer="c62c4695-7a7d-45ab-b7e5-2925ba2aac27" preserveAspectRatio="none" viewBox="0 -1.5 170 3" className="x49"><path d="M 0 0 L 170 0"  /></svg>
     <div data-layer="2e3a8bc1-9309-466c-89c9-bdccdaa95e44" className="x60"></div>
-    <div data-layer="15f9789b-f89a-4cc9-995b-a35d9b3b24ae" className="xb8b017bc">다음단계</div>
+    
+    <a className="xb8b017bc" onClick={nextPage}>다음단계</a>
     <div data-layer="34bd41a1-51b6-4517-83c6-aec2da8c3369" className="xc5c92f45">룸메이트 학번</div>
 
     
-      <label><input type="text" className="x90" onChange={e=>setState({...state, founded_studentid : e.target.value})}/></label>
+      <label><input type="text" className="x90" placeholder="학번을 입력하세요" onChange={e=>setState({...state, founded_studentid : e.target.value})}/></label>
 
 
     <div data-layer="8c133eb5-3bd7-4e52-9819-1e687b9990ef" className="xe043deab">가상방 참여</div>
     
-    <div data-layer="ef446643-cab6-4320-b4c3-13c49130343e" className="x94"></div>
+    
 
-      <button className="x5f367135">검색</button>
+      
 
     <div data-layer="3bd54ca4-6c28-475e-b7fd-ecbe8f56c9c7" className="xd0cc22b0">가상방 비밀번호</div>
     <svg data-layer="0168a967-65d9-44f6-a483-cbaaec6e2fa3" preserveAspectRatio="none" viewBox="0 0 43 34" className="x55867e0f1"><path d="M 23.11572265625 24.08395385742188 L 0 24.08395385742188 L 0 12.04095458984375 L 23.11572265625 12.04095458984375 L 23.11572265625 0 L 43 16.99899291992188 L 23.11572265625 34 L 23.11572265625 24.08395385742188 Z"  /></svg>
@@ -81,7 +87,7 @@ function X19209(){
 
     <div data-layer="a0613516-9c5f-4000-9e83-53cd1faf8373" className="x97"></div>
     <div data-layer="6a13627b-d84a-4fe6-aac3-f023e8671abc" className="x254483a1" onClick={searchVirtualRoom}>입장</div>
-    <div data-layer="38713169-edaf-4b35-9f44-a8c7dd015cfb" className="failReEnter">FAIL, RE-ENTER</div>
+    
     <div data-layer="4ca2da34-b638-438a-9f6d-a9709d95ac72" className="x61"></div>
     <div data-layer="032640ec-5e49-4b87-a664-c8187bb32868" className="x62"></div>
     <div data-layer="b8b5ccc4-62cf-4ff4-a789-5cecf021b74f" className="x63"></div>

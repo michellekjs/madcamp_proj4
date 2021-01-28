@@ -9,7 +9,7 @@ const Todo = props => (
         <td>{props.todo.todo_description}</td>
         <td>{props.todo.todo_priority}</td>
         <td>
-            <Link to={"/edit/"+props.todo._id}>Edit</Link>
+            <Link to={"/edit/"+props.todo._id}>보기</Link>
         </td>
     </tr>
 )
@@ -40,16 +40,18 @@ export default class TodosList extends Component {
     render() {
         return (
             <div className="todolist">
-                <h3 className="title" style={{fontWeight:'bold'}}>기숙사 게시판</h3>
+                <h3 className="title" style={{fontWeight:'bold'}}>Notice</h3>
+                 {/*
                 <Link to="./create">
                 <button class="right"className="writebutton" float>게시물 작성하기</button></Link>
+                */}
                 <table className="table" style={{ marginTop: 20 }} >
                     <thead>
                         <tr>
-                            <th className="tabletitle">제목</th>
-                            <th className="tablewriter">작성자</th>
-                            <th className="date">날짜</th>
-                            <th className="edit">수정</th>
+                            <th className="tabletitle">목록</th>
+                            <th className="tablewriter">제목</th>
+                            <th className="date">작성자</th>
+                            <th className="edit">바로가기</th>
                         </tr>
                     </thead>
                     <tbody>

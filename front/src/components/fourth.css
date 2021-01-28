@@ -29,7 +29,7 @@ html {
     transform-origin: center;
       opacity: 1;
       cursor: default;
-      margin-top: 0.00px;
+      margin-top: 80px;
       margin-right: 0.00px;
       margin-bottom: 0.00px;
       margin-left: 0.00px;
@@ -472,10 +472,10 @@ html {
       overflow-x: unset;
       overflow-y: unset;
       white-space: pre;
-      width: 139.00px;
-    height: 23.00px;
-    left: 1057.00px;
-    top: 682.00px;
+      width: 126.00px;
+      height: 25.00px;
+    left: 1040.00px;
+    top:  679.00px;
 
 }
 

@@ -52,15 +52,15 @@ router.post('/attend', async function(req,res){
 
     const virtualroom = await virtualRoomInfo.findOne({password : req.body.password, founded_studentid : req.body.founded_studentid});
 
-    if(!virtualRoomInfo){
+    if(!virtualroom){
         res.json({message : "failed"});
     }
-
-    let new_room_mates = virtualroom.room_mates;
-    new_room_mates.push({studentid : req.body.studentid});
-    console.log(new_room_mates);
-    await virtualRoomInfo.updateOne({founded_studentid : req.body.founded_studentid},{room_mates : new_room_mates});
-    
+    else{
+        let new_room_mates = virtualroom.room_mates;
+        new_room_mates.push({studentid : req.body.studentid});
+        console.log(new_room_mates);
+        await virtualRoomInfo.updateOne({founded_studentid : req.body.founded_studentid},{room_mates : new_room_mates});
+    }
 
 });
 

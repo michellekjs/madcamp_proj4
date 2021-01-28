@@ -46,7 +46,7 @@ export default class CreateTodo2 extends Component {
             todo_completed: this.state.todo_completed
         };
 
-        axios.post('http://localhost:5000/todos2/create2', newTodo)
+        axios.post('http://192.249.18.234:5000/mongooseDB/todos2/create', newTodo)
             .then(res => console.log(res.data));
 
         this.setState({

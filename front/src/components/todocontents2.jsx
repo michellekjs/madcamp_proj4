@@ -27,7 +27,7 @@ componentDidMount() {
   console.log("Hello");
   console.log(this.props);
  
-    axios.get('http://192.249.18.234:5000/mongooseDB/todos/board/'+this.props.match.params.id)
+    axios.get('http://192.249.18.234:5000/mongooseDB/todos2/board/'+this.props.match.params.id)
         .then(response => {
           console.log(response);
             this.setState({
@@ -75,7 +75,7 @@ onSubmit(e) {
         todo_completed: this.state.todo_completed
     };
     console.log(obj);
-    axios.post('http://192.249.18.234:5000/mongooseDB/todos/update/'+this.props.match.params.id, obj)
+    axios.post('http://192.249.18.234:5000/mongooseDB/todos2/update/'+this.props.match.params.id, obj)
         .then((res) => {
             console.log(res.data)
             this.props.history.push('/board');

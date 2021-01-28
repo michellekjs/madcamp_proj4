@@ -21,7 +21,8 @@ export default class EditTodo extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://192.249.18.234:5000/todos/edit'+this.props.match.params.id)
+        console.log(this.props);
+        axios.get('http://192.249.18.234:5000/todos/edit/'+this.props.match.params.id)
             .then(response => {
                 this.setState({
                     todo_description: response.data.todo_description,
@@ -68,10 +69,13 @@ export default class EditTodo extends Component {
             todo_completed: this.state.todo_completed
         };
         console.log(obj);
-        axios.post('http://192.249.18.234:5000/mongoDB/todos/update/'+this.props.match.params.id, obj)
-            .then(res => console.log(res.data));
+        axios.post('http://192.249.18.234:5000/mongooseDB/todos/update/'+this.props.match.params.id, obj)
+            .then((res) => {
+                console.log(res.data)
+                this.props.history.push('/board');
+            });
         
-        this.props.history.push('/');
+        
     }
 
     render() {

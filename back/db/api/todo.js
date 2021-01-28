@@ -13,14 +13,18 @@ router.get('/', function(req, res) {
     });
 });
 
-router.get('/board', function(req, res) {
+
+router.get('/board/:id', function(req, res) {
+    console.log("Hi board");
+    console.log(req);
     let id = req.params.id;
+    console.log(id);
     Todo.findById(id, function(err, todo) {
         res.json(todo);
     });
 });
 
-router.post('/edit/:id', function(req, res) {
+router.get('/edit', function(req, res) {
     console.log("-------------");
     console.log(req.params);
     console.log("-------------");

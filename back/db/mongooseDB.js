@@ -15,10 +15,13 @@ var domitoryRouter = require('./api/domitory');
 var authRouter = require('./api/auth');
 var todoRouter = require('./api/todo');
 var virtualRooomRouter = require('./api/virtualroom');
+var todo2Router = require('./api/todo2');
 
 router.use('/user', userRouter);
 router.use('/userDomitory', domitoryRouter);
 router.use('/auth', authRouter);
 router.use('/todos', todoRouter);
 router.use('/virtualRoom', virtualRooomRouter);
+router.use('/todos2',todo2Router);
+
 module.exports = router;

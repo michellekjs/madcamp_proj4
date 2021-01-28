@@ -1,12 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./fifth.css";
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
+import { Next } from "react-bootstrap/esm/PageItem";
 class X19208 extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
       };
+  }
+
+  nextPage=(e)=>{
+    
   }
   
   render() {
@@ -17,7 +22,6 @@ class X19208 extends React.Component {
             <button data-layer="4bb75c57-fe1b-40c1-b393-fb47d9b082b2" className="x1d33fd7a">완료</button>
         </Link>
         
-        <div data-layer="5b242954-7e34-44fc-a258-abb89ee6cdf1" className="x9131c1cc">신청 완료</div>
         <svg data-layer="90b28a0d-8e17-42a9-ac17-5ac24737e097" preserveAspectRatio="none" viewBox="0 -1.5 500 3" className="x55"><path d="M 0 0 L 500 0"  /></svg>
         <svg data-layer="8a882bef-cb4b-4661-a0a2-7dcb859cddc7" preserveAspectRatio="none" viewBox="0 0 20 20" className="x16a417420"><path d="M 10 0 C 15.52284812927246 0 20 4.477152347564697 20 10 C 20 15.52284812927246 15.52284812927246 20 10 20 C 4.477152347564697 20 0 15.52284812927246 0 10 C 0 4.477152347564697 4.477152347564697 0 10 0 Z"  /></svg>
         <div data-layer="55bab571-e40d-4005-b7b4-8517f434513e" className="x1230MyPage">배정 결과는 12/30에 My Page 기숙사 신청/배정 현황에서 확인 가능 </div>
