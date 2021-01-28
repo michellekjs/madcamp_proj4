@@ -1,0 +1,130 @@
+
+ html {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+  }
+
+
+
+.campusmap .map{
+    position:absolute;
+    left:50px;
+    opacity:0.7;
+}
+
+.campusmap .circles .circle{
+    position:absolute;
+    left:400px;
+    top:200px;
+}
+.campusmap .circles .circle2{
+    position:absolute;
+    left:370px;
+    top:200px;
+    
+}
+.campusmap .circles .circle3{
+    position:absolute;
+    left:350px;
+    top:200px;
+}
+
+.campusmap .circles .circle4{
+    position:absolute;
+    left:480px;
+    top:120px;
+}
+.campusmap .circles .circle5{
+    position:absolute;
+    left:260px;
+    top:550px;
+}
+.campusmap .circles .circle6{
+    position:absolute;
+    left:150px;
+    top:380px;
+}
+.campusmap .circles .circle7{
+    position:absolute;
+    left:480px;
+    top:150px;
+}
+.campusmap .circles .circle8{
+    position:absolute;
+    left:470px;
+    top:150px;
+}
+.campusmap .circles .circle9{
+    position:absolute;
+    left:200px;
+    top:500px;
+}
+.campusmap .circles .circle10{
+    position:absolute;
+    left:1000px;
+    top:350px;
+}
+
+.campusmap .circles .circle11{
+    position:absolute;
+    left:260px;
+    top:550px;
+}
+
+.campusmap .circles .circle12{
+    position:absolute;
+    left:150px;
+    top:380px;
+}
+.campusmap .circles .circle13{
+    position:absolute;
+    left:300px;
+    top:200px;
+}
+
+.campusmap .campustags {
+    position:absolute;
+    left:1550px;
+    top:110px;
+    border-style:none;
+}
+
+
+
+.campusmap .campustags .btn {
+    border-style:none;
+    font-size:15pt;
+    margin-top: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:1000;
+    background-color: rgb(142, 196, 137);
+    color:white;
+    height:50px;
+    width:200px;
+    border-radius: 10px;
+}
+
+.campusmap .campustags .btn2 {
+    border-style:none;
+    font-size:15pt;
+    margin-top: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:1000;
+    background-color: rgb(142, 196, 137);
+    color:white;
+    border-radius: 10px;
+    height:50px;
+    width:200px;
+}
+

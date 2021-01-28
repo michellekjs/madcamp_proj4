@@ -31,7 +31,7 @@ html {
 
       background-color: rgba(255, 255, 255, 1);
       width: 1920.00px;
-    height: 1434.00px;
+    height: 1100.00px;
     left: 0px;
     top: 0px;
 
@@ -117,7 +117,7 @@ html {
       width: 298.00px;
     height: 65.00px;
     left: 877.00px;
-    top: 1273.00px;
+    top: 1000.00px;
 
 }
 
@@ -140,10 +140,10 @@ html {
       padding-right: 0.00px;
       padding-bottom: 0.00px;
       padding-left: 0.00px;
-      background-color: rgba(255, 255, 255, 0);
+      background-color: rgba(128, 192, 24, 0.863);
       text-align: left;
       letter-spacing: 0.00px;
-      color: rgba(255, 255, 255, 1);
+      color: rgb(255, 255, 255);
       -webkit-text-stroke: unset;
       font-size: 25.00px;
       font-weight: 700;
@@ -154,10 +154,13 @@ html {
       overflow-x: unset;
       overflow-y: unset;
       white-space: pre;
-      width: 91.00px;
-    height: 27.00px;
-    left: 981.00px;
-    top: 1292.00px;
+      width: 200.00px;
+    height: 50.00px;
+    left: 900.00px;
+    top: 1020.00px;
+    text-align: center;
+    border-radius: 10px;
+    border-style:none;
 
 }
 
@@ -197,7 +200,7 @@ html {
       width: 106.00px;
     height: 25.00px;
     left: 389.00px;
-    top: 822.00px;
+    top: 600.00px;
 
 }
 
@@ -237,7 +240,7 @@ html {
       width: 86.00px;
     height: 25.00px;
     left: 389.00px;
-    top: 895.00px;
+    top: 680.00px;
 
 }
 
@@ -277,7 +280,47 @@ html {
       width: 80.00px;
     height: 25.00px;
     left: 389.00px;
-    top: 967.00px;
+    top: 760.00px;
+
+}
+
+.x19206 .money{
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0.00deg);
+-webkit-transform: rotate(0.00deg);
+transform: rotate(0.00deg);
+-ms-transform-origin: center;
+-webkit-transform-origin: center;
+transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0.00px;
+  margin-right: 0.00px;
+  margin-bottom: 0.00px;
+  margin-left: 0.00px;
+  padding-top: 0.00px;
+  padding-right: 0.00px;
+  padding-bottom: 0.00px;
+  padding-left: 0.00px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  letter-spacing: 0.00px;
+  color: rgba(0, 0, 0, 1);
+  -webkit-text-stroke: unset;
+  font-size: 22.00px;
+  font-weight: 700;
+font-style: normal;
+  font-family: NanumSquare, Arial;
+  text-decoration: none;
+  box-shadow: none;
+  overflow-x: unset;
+  overflow-y: unset;
+  white-space: pre;
+  width: 80.00px;
+height: 25.00px;
+left: 730.00px;
+top: 760.00px;
 
 }
 
@@ -309,7 +352,7 @@ html {
       width: 80.00px;
     height: 25.00px;
     left: 389.00px;
-    top: 1040.00px;
+    top: 840.00px;
 
 }
 
@@ -349,7 +392,7 @@ html {
       width: 126.00px;
     height: 25.00px;
     left: 389.00px;
-    top: 1112.00px;
+    top: 930.00px;
 
 }
 
@@ -561,7 +604,7 @@ html {
       width: 330.00px;
       height: 38.00px;
       left: 730.00px;
-      top: 815.00px;
+      top: 600.00px;
 
 }
 
@@ -605,7 +648,7 @@ html {
       width: 330.00px;
       height: 38.00px;
       left: 730.00px;
-      top: 889.00px;
+      top: 680.00px;
 
 }
 
@@ -645,7 +688,7 @@ html {
       width: 125.00px;
     height: 29.00px;
     left: 380.00px;
-    top: 673.00px;
+    top: 500.00px;
 
 }
 

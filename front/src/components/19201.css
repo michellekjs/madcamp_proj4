@@ -49,6 +49,12 @@
 
 }
 
+
+
+.x19201 .morefix{
+
+}
+
 .x19201 .textkds{
   position:absolute;
   left:90px;
@@ -194,6 +200,18 @@ border-style: none;
 
 }
 
+.x19201 .x38 .morenotice{
+  position: absolute;;
+  left:450px;
+  top:40px;
+  border-style:none;
+  font-size:10pt;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: beige;
+  border-radius: 5px;
+  height:30px;
+}
+
 .x19201 .x39 {
     position: absolute;
       box-sizing: border-box;
@@ -222,6 +240,17 @@ border-style: none;
     top: 1077.00px;
     border-radius: 30px;
 
+}
+.x19201 .x39 .morefix{
+  position: absolute;;
+  left:450px;
+  top:40px;
+  border-style:none;
+  font-size:10pt;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: beige;
+  border-radius: 5px;
+  height:30px;
 }
 
 .x19201 .notice {
@@ -2445,4 +2474,62 @@ border-style: none;
       padding-left: 0.00px;
       stroke: rgba(142, 189, 13, 1);
           stroke-width: 3.00px;
-          strok
+          stroke-linecap: butt;
+      box-shadow: none;
+      width: 3.00px;
+    height: 22.00px;
+    left: 332.13px;
+    top: 1101.43px;
+
+}
+
+.x19201 .x59 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      stroke: rgba(142, 189, 13, 1);
+          stroke-width: 2.00px;
+          stroke-linecap: butt;
+      box-shadow: none;
+      width: 800px;
+    height: 2.00px;
+    left: 920.89px;
+    top: 1048.50px;
+
+}
+
+.x19201 .x11111{
+  position: absolute;
+  box-sizing: border-box;
+  -ms-transform: rotate(0.00deg);
+-webkit-transform: rotate(0.00deg);
+transform: rotate(0.00deg);
+-ms-transform-origin: center;
+-webkit-transform-origin: center;
+transform-origin: center;
+  opacity: 1;
+  cursor: default;
+  background-color: rgba(255, 255, 255, 1);
+border-style: none;
+  box-shadow: 2px 2px 2px 2px rgb(240, 240, 240);
+  width: 840.00px;
+height: 785.00px;
+left: 900.00px;
+top: 670.00px;
+border-radius: 30px;
+}

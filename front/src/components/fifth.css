@@ -43,7 +43,7 @@
       overflow-y: auto;
       background-color: rgba(255, 255, 255, 1);
       width: 1920.00px;
-    height: 1073.00px;
+    height: 900.00px;
     left: 0px;
     top: 0px;
 
@@ -89,7 +89,7 @@
       width: 298.00px;
     height: 65.00px;
     left: 847.00px;
-    top: 926.00px;
+    top: 600.00px;
 
 }
 
@@ -129,7 +129,8 @@
       width: 46.00px;
     height: 27.00px;
     left: 973.00px;
-    top: 945.00px;
+    top: 620.00px;
+    border-style:none;
 
 }
 
@@ -169,7 +170,7 @@
       width: 136.00px;
     height: 39.00px;
     left: 937.00px;
-    top: 648.00px;
+    top: 600.00px;
 
 }
 
@@ -199,7 +200,7 @@
       width: 500.00px;
     height: 3.00px;
     left: 751.27px;
-    top: 706.00px;
+    top: 500.00px;
 
 }
 
@@ -227,7 +228,7 @@
       width: 20.00px;
     height: 20.00px;
     left: 996.00px;
-    top: 697.00px;
+    top: 490.00px;
 
 }
 
@@ -267,7 +268,7 @@
       width: 648.00px;
     height: 25.00px;
     left: 680.00px;
-    top: 736.00px;
+    top: 450.00px;
 
 }
 

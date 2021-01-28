@@ -34,8 +34,20 @@ export default class X19201 extends Component {
             <button className="applylink2">생활관 정보 보기</button>
         </Link>
 
-        <div data-layer="268615cd-9d5b-452b-9093-b08793650b9b" className="x38"></div>
-        <div data-layer="b7c15d98-0b5d-45a1-bfc9-64e7f9c3d7c7" className="x39"></div>
+       
+
+        
+        <div data-layer="268615cd-9d5b-452b-9093-b08793650b9b" className="x38">
+            <Link to='./board' >
+                <button className="morenotice">더보기</button>
+            </Link>
+        </div>
+        <div data-layer="b7c15d98-0b5d-45a1-bfc9-64e7f9c3d7c7" className="x39">
+        <Link to='./board2' >
+            <button className="morefix">더보기</button>
+        </Link>
+
+        </div>
         <div data-layer="b7c15d98-0b5d-45a1-bfc9-64e7f9c3d7c7" className="x11111"></div>
         <div data-layer="519982cb-2491-40da-abe5-e525fc656d3c" className="notice">Notice</div>
         <div data-layer="7797b422-40e6-4fc1-8ddf-e43a8ad15cf4" className="x3b7dc6b7">수리유지보수</div>

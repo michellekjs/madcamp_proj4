@@ -13,7 +13,7 @@ class X19208 extends React.Component {
     
     return (
           <div data-layer="8b3f94d2-d96f-42d1-befb-461d8ec274c9" className="x19208">        <div data-layer="8eaed565-05c1-4ff7-94bc-2419a3d45fe5" className="x60"></div>
-        <Link to="./19201">
+        <Link to="./">
             <button data-layer="4bb75c57-fe1b-40c1-b393-fb47d9b082b2" className="x1d33fd7a">완료</button>
         </Link>
         

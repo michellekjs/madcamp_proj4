@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import "./create-todo.css"
+import {Link, useHistory} from 'react-router-dom'
 
 export default class CreateTodo extends Component {
     constructor(props) {
@@ -31,7 +32,9 @@ export default class CreateTodo extends Component {
             todo_priority: e.target.value
         });
     }
+
     onSubmit(e) {
+        
         e.preventDefault();
         
         console.log(`Form submitted:`);
@@ -46,8 +49,11 @@ export default class CreateTodo extends Component {
             todo_completed: this.state.todo_completed
         };
 
-        axios.post('http://localhost:3000/todos/create', newTodo)
-            .then(res => console.log(res.data));
+        axios.post('http://192.249.18.234:5000/mongooseDB/todos/create', newTodo)
+            .then((res) => {
+                console.log(res.data)
+                this.props.history.push('/board');
+            });
 
         this.setState({
             todo_description: '',
@@ -55,6 +61,9 @@ export default class CreateTodo extends Component {
             todo_priority: '',
             todo_completed: false
         })
+
+        
+
     }
     render() {
         return (
@@ -81,7 +90,9 @@ export default class CreateTodo extends Component {
                     </div>
                     
                     <div className="form-group">
-                        <input type="submit" value="등록하기" className="btn btn-primary" />
+                        
+                        <input type="submit" value="등록하기" className="btn btn-primary"/>
+                        
                     </div>
                 </form>
             </div>

@@ -1,52 +1,103 @@
-import React from "react";
+
+import React, { useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import {Link, useHistory} from "react-router-dom";
+import { UserContext } from '../UserContext';
+import axios from "axios";
 import "./fourth.css";
-import {Link} from "react-router-dom";
-class X19207 extends React.Component {
-  constructor(props) {
-      super(props);
-      this.state = {
-      };
+
+function X19209(){
+
+  //유저 토큰
+  const { token } = useContext(UserContext);
+
+  //history
+  const history = useHistory();
+
+  //roomate
+  const [state, setState] = useState({
+    founded_studentid : "",
+    password : "",
+    studentid : ""
+  });
+
+  useEffect(()=>{
+
+    axios.get("http://192.249.18.234:5000/mongooseDB/auth", {headers: { token:token}})
+          .then((res) =>{
+            console.log("Auth client4")
+            console.log(res.data);
+            
+            setState({... state, studentid : res.data.studentid});
+            //setVirtualRoomState(vitrualRoomState.push({studentid : res.data.studentid}));
+          })
+          .catch(err => {
+            window.scrollTo(0, 0);
+            history.push('/');
+            alert('로그인을 다시 해주세요.');
+          })
+
+  },[]);
+
+  function searchVirtualRoom(e){
+    console.log(state);
+    axios.post("http://192.249.18.234:5000/mongooseDB/virtualRoom/attend", state)
+          .then((res) =>{
+            if(res.data.message === "failed"){
+              alert("기본 정보를 다시 확인해주세요.");
+            }
+
+          })
+          .catch(err => {
+            alert('정보를 다시 입력해주세요.');
+          })
+
+    
   }
+
+
+  return (
+    <div data-layer="5c76a024-e719-4f1a-9505-47aeaa0b8f66" className="x19209">        
+    <div data-layer="8a987bc1-0551-48cb-adab-67bb632577bb" className="x482ce09d">계절학기 신청</div>
+    <svg data-layer="c62c4695-7a7d-45ab-b7e5-2925ba2aac27" preserveAspectRatio="none" viewBox="0 -1.5 170 3" className="x49"><path d="M 0 0 L 170 0"  /></svg>
+    <div data-layer="2e3a8bc1-9309-466c-89c9-bdccdaa95e44" className="x60"></div>
+    <div data-layer="15f9789b-f89a-4cc9-995b-a35d9b3b24ae" className="xb8b017bc">다음단계</div>
+    <div data-layer="34bd41a1-51b6-4517-83c6-aec2da8c3369" className="xc5c92f45">룸메이트 학번</div>
+
+    
+      <label><input type="text" className="x90" onChange={e=>setState({...state, founded_studentid : e.target.value})}/></label>
+
+
+    <div data-layer="8c133eb5-3bd7-4e52-9819-1e687b9990ef" className="xe043deab">가상방 참여</div>
+    
+    <div data-layer="ef446643-cab6-4320-b4c3-13c49130343e" className="x94"></div>
+
+      <button className="x5f367135">검색</button>
+
+    <div data-layer="3bd54ca4-6c28-475e-b7fd-ecbe8f56c9c7" className="xd0cc22b0">가상방 비밀번호</div>
+    <svg data-layer="0168a967-65d9-44f6-a483-cbaaec6e2fa3" preserveAspectRatio="none" viewBox="0 0 43 34" className="x55867e0f1"><path d="M 23.11572265625 24.08395385742188 L 0 24.08395385742188 L 0 12.04095458984375 L 23.11572265625 12.04095458984375 L 23.11572265625 0 L 43 16.99899291992188 L 23.11572265625 34 L 23.11572265625 24.08395385742188 Z"  /></svg>
+    
+      <label><input type="text" className="x96" placeholder="비밀번호를 입력하세요" onChange={e=>setState({...state, password: e.target.value})}/></label>
+
+    <div data-layer="a0613516-9c5f-4000-9e83-53cd1faf8373" className="x97"></div>
+    <div data-layer="6a13627b-d84a-4fe6-aac3-f023e8671abc" className="x254483a1" onClick={searchVirtualRoom}>입장</div>
+    <div data-layer="38713169-edaf-4b35-9f44-a8c7dd015cfb" className="failReEnter">FAIL, RE-ENTER</div>
+    <div data-layer="4ca2da34-b638-438a-9f6d-a9709d95ac72" className="x61"></div>
+    <div data-layer="032640ec-5e49-4b87-a664-c8187bb32868" className="x62"></div>
+    <div data-layer="b8b5ccc4-62cf-4ff4-a789-5cecf021b74f" className="x63"></div>
+    <div data-layer="0a36ed69-19e7-46e2-92be-60ca9cb6403a" className="x64"></div>
+    <svg data-layer="332884ed-c91e-491d-872e-fbf048275262" preserveAspectRatio="none" viewBox="0 0 43 34" className="x1"><path d="M 23.11572265625 24.08395385742188 L 0 24.08395385742188 L 0 12.04095458984375 L 23.11572265625 12.04095458984375 L 23.11572265625 0 L 43 16.99899291992188 L 23.11572265625 34 L 23.11572265625 24.08395385742188 Z"  /></svg>
+    <svg data-layer="a34d5f83-d95c-4930-9452-e5247c482cef" preserveAspectRatio="none" viewBox="0 0 43 34" className="x3"><path d="M 23.11572265625 24.08395385742188 L 0 24.08395385742188 L 0 12.04095458984375 L 23.11572265625 12.04095458984375 L 23.11572265625 0 L 43 16.99899291992188 L 23.11572265625 34 L 23.11572265625 24.08395385742188 Z"  /></svg>
+    <svg data-layer="2d551478-b7ac-40e4-924a-3a70b90fe298" preserveAspectRatio="none" viewBox="0 0 43 34" className="x4"><path d="M 23.11572265625 24.08395385742188 L 0 24.08395385742188 L 0 12.04095458984375 L 23.11572265625 12.04095458984375 L 23.11572265625 0 L 43 16.99899291992188 L 23.11572265625 34 L 23.11572265625 24.08395385742188 Z"  /></svg>
+    <div data-layer="67619069-bb4d-45e8-b377-e3b287f60f02" className="x87d59db1">개인정보 확인<br /><br />정보제공 동의</div>
+    <div data-layer="0bfb5240-9ed5-43fa-940b-74ea28481c35" className="xd11a16ed">신청 사유 작성 <br /><br />가상방 설정</div>
+    <div data-layer="2c0a7999-b382-47c2-a6b8-ef737b0d9243" className="x6b8dc4e0">가상방 개설/참여</div>
+    <div data-layer="83feaed5-6079-46ce-ba4d-b4420fdb0d34" className="x">신청 완료</div>
+  </div>
+  );
   
-  render() {
-    return (
-          <div data-layer="d6f7d13f-b581-474c-8251-eb69ac1dd758" className="x19207">        <div data-layer="0fab6359-066f-4585-ba6a-9d6adb13eedf" className="x60"></div>
-        <Link to="./fifth">
-            <button data-layer="21dad527-2fa7-4fba-b477-53508b5c511f" className="x3abc30a3">다음단계</button>
-        </Link>
-        <div data-layer="09628a9c-29dd-4f09-8fb5-a12aa5610292" className="success">SUCCESS</div>
-        <div data-layer="38aae3d0-4884-4405-a179-564d3dac411e" className="xbced0dfa">룸메이트 학번</div>
-        <div data-layer="94f5bf2f-66fb-493c-95ab-577f26d280fd" className="xfc480d69">룸메이트 이름</div>
-        <div data-layer="f83ece6d-6d52-455d-8a7b-d0d7ed53e7e0" className="x90"></div>
-        <div data-layer="000dd30a-75b3-4ed0-995b-2dcc0b9a57a9" className="x91"></div>
-        <div data-layer="061a91aa-8f02-4b4c-a872-856ad6c16a16" className="x5e9a2956">가상방 참여</div>
-        <div data-layer="e3090d32-0a42-4187-ac23-3a45f0ff502b" className="x4dbe6f3a">가상방 비밀번호</div>
-        <svg data-layer="da27337a-fa3a-49ca-87e1-196ec11d8deb" preserveAspectRatio="none" viewBox="0 0 43 34" className="x51a7a80fc"><path d="M 23.11572265625 24.08395385742188 L 0 24.08395385742188 L 0 12.04095458984375 L 23.11572265625 12.04095458984375 L 23.11572265625 0 L 43 16.99899291992188 L 23.11572265625 34 L 23.11572265625 24.08395385742188 Z"  /></svg>
-        <div data-layer="cd998df3-6586-48a9-930b-caf4ebd9de73" className="x96"></div>
-        <div data-layer="254e8619-9f5a-4579-affb-85b728df1427" className="x97"></div>
-        <div data-layer="3777a368-fd9a-4867-a5db-b611cd044f26" className="x32bf04c4">입장</div>
-        <div data-layer="f600fc3c-849f-4655-b18f-f90fbea9eb0c" className="x94"></div>
-        <div data-layer="1bb19d50-3839-44e4-8098-540b3c2350c8" className="x79fd0330">검색</div>
-        <div data-layer="78cecb22-08ad-4064-97c0-c4a2137d203b" className="xa5b4b495">계절학기 신청</div>
-        <svg data-layer="c81ce4d5-b24c-4f01-8707-1aeabf145e94" preserveAspectRatio="none" viewBox="0 -1.5 170 3" className="x49"><path d="M 0 0 L 170 0"  /></svg>
-        <div data-layer="c2899302-2bf0-48a0-bf8a-c02b6ce14e0d" className="x61"></div>
-        <div data-layer="68b23ae7-f535-404f-9765-1e5e519a8ee7" className="x62"></div>
-        <div data-layer="83367d07-e4a8-4955-94e4-dbacbcd4fcff" className="x63"></div>
-        <div data-layer="e0f320aa-a639-4b7d-a6a0-cc664dd1bc23" className="x64"></div>
-        <svg data-layer="6a1c1a5d-3fc6-413b-921f-ccec67d5adec" preserveAspectRatio="none" viewBox="0 0 43 34" className="x1"><path d="M 23.11572265625 24.08395385742188 L 0 24.08395385742188 L 0 12.04095458984375 L 23.11572265625 12.04095458984375 L 23.11572265625 0 L 43 16.99899291992188 L 23.11572265625 34 L 23.11572265625 24.08395385742188 Z"  /></svg>
-        <svg data-layer="32715874-1301-49ed-8d10-b5037a2347f1" preserveAspectRatio="none" viewBox="0 0 43 34" className="x3"><path d="M 23.11572265625 24.08395385742188 L 0 24.08395385742188 L 0 12.04095458984375 L 23.11572265625 12.04095458984375 L 23.11572265625 0 L 43 16.99899291992188 L 23.11572265625 34 L 23.11572265625 24.08395385742188 Z"  /></svg>
-        <svg data-layer="30969bf1-16e1-4559-b931-bddd5d94c54f" preserveAspectRatio="none" viewBox="0 0 43 34" className="x4"><path d="M 23.11572265625 24.08395385742188 L 0 24.08395385742188 L 0 12.04095458984375 L 23.11572265625 12.04095458984375 L 23.11572265625 0 L 43 16.99899291992188 L 23.11572265625 34 L 23.11572265625 24.08395385742188 Z"  /></svg>
-        <div data-layer="a493ec89-c7ca-46ec-a5f1-dfb6369fd3e5" className="x3381c31d">개인정보 확인<br /><br />정보제공 동의</div>
-        <div data-layer="da6df046-96ec-46ff-ad7e-7fb8445834a1" className="x8658448a">신청 사유 작성 <br /><br />가상방 설정</div>
-        <div data-layer="b44d1b64-f509-4087-b9a6-752e7a5ac332" className="x35bcccc7">가상방 개설/참여</div>
-        <div data-layer="fe845c61-9399-4d0f-a071-44935cc598ee" className="x">신청 완료</div>
-</div>
-    );
-  }
 }
-X19207.propTypes = {
-}
-X19207.defaultProps = {
-}
-export default X19207;
+
+
+export default X19209;
+          

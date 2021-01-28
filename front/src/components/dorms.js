@@ -2,7 +2,9 @@ import React from 'react';
 import {MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol,MDBRow,MDBContainer } from 'mdbreact';
 import "./dorms.css";
 import Image from 'react-image-resizer';
-import {Tabs,Tab,Col,Row,Nav,NavItem} from 'react-bootstrap';
+import {Tabs,Tab} from 'react-bootstrap';
+
+
 import ReactCardFlip from 'react-card-flip';
 import Swiper from 'react-id-swiper';
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -25,6 +27,11 @@ import ek1 from './assets/ek/ek1.jpg';
 import alfm1 from './assets/alfm/alfm1.jpg';
 import wls1 from './assets/wls/wls1.jpg';
 import tjd1 from './assets/tjd/tjd1.jpg'
+import sarang1 from './assets/sarang/sarang1.png';
+import somang1 from './assets/somang1.png';
+
+
+
 
 const imgdata=[
 {original:logo,thumbnail:logo}
@@ -38,7 +45,91 @@ const imgdata=[
 
  
 const mirnar=[
-    {original:logo,thumbnail:logo}
+    {original:alfm1,thumbnail:alfm1}
+, {original:i1,thumbnail:i1}
+, {original:i2,thumbnail:i2}
+, {original:i3,thumbnail:i3}
+, {original:i4,thumbnail:i4}
+, {original:i5,thumbnail:i5}
+, {original:i6,thumbnail:i6}
+];
+
+const somang=[
+    {original:somang1,thumbnail:somang1}
+, {original:i1,thumbnail:i1}
+, {original:i2,thumbnail:i2}
+, {original:i3,thumbnail:i3}
+, {original:i4,thumbnail:i4}
+, {original:i5,thumbnail:i5}
+, {original:i6,thumbnail:i6}
+];
+
+const sejong=[
+    {original:tp1,thumbnail:tp1}
+, {original:i1,thumbnail:i1}
+, {original:i2,thumbnail:i2}
+, {original:i3,thumbnail:i3}
+, {original:i4,thumbnail:i4}
+, {original:i5,thumbnail:i5}
+, {original:i6,thumbnail:i6}
+];
+
+const areum=[
+    {original:a1,thumbnail:a1}
+, {original:i1,thumbnail:i1}
+, {original:i2,thumbnail:i2}
+, {original:i3,thumbnail:i3}
+, {original:i4,thumbnail:i4}
+, {original:i5,thumbnail:i5}
+, {original:i6,thumbnail:i6}
+];
+
+
+const sarang=[
+    {original:sarang1,thumbnail:sarang1}
+, {original:i1,thumbnail:i1}
+, {original:i2,thumbnail:i2}
+, {original:i3,thumbnail:i3}
+, {original:i4,thumbnail:i4}
+, {original:i5,thumbnail:i5}
+, {original:i6,thumbnail:i6}
+];
+
+const sung=[
+    {original:tjd1,thumbnail:tjd1}
+, {original:i1,thumbnail:i1}
+, {original:i2,thumbnail:i2}
+, {original:i3,thumbnail:i3}
+, {original:i4,thumbnail:i4}
+, {original:i5,thumbnail:i5}
+, {original:i6,thumbnail:i6}
+];
+
+const jilli=[
+    {original:wls1,thumbnail:wls1}
+, {original:i1,thumbnail:i1}
+, {original:i2,thumbnail:i2}
+, {original:i3,thumbnail:i3}
+, {original:i4,thumbnail:i4}
+, {original:i5,thumbnail:i5}
+, {original:i6,thumbnail:i6}
+];
+
+
+
+
+const da=[
+    {original:ek1,thumbnail:ek1}
+, {original:i1,thumbnail:i1}
+, {original:i2,thumbnail:i2}
+, {original:i3,thumbnail:i3}
+, {original:i4,thumbnail:i4}
+, {original:i5,thumbnail:i5}
+, {original:i6,thumbnail:i6}
+];
+
+const jihye=[
+    {original:tp1,thumbnail:tp1}
 , {original:i1,thumbnail:i1}
 , {original:i2,thumbnail:i2}
 , {original:i3,thumbnail:i3}
@@ -73,11 +164,9 @@ class Dorm extends React.Component {
         return (
             <div className="dorm">
                 <div>
-               
-                <Tabs  indicatorColor="primary"
-    textColor="primary"
-     defaultActiveKey="male" className="dormtab">
-                    <Tab style={{textColor:'green'}} eventKey="male" title="남학생 기숙사" >
+
+                <Tabs defaultActiveKey="male" className="dormtab">
+                    <Tab  eventKey="male" title="남학생 기숙사" >
                         <div className="tab-item-wrapper">
                             <MDBContainer className="male">
                                 <MDBRow>
@@ -627,17 +716,25 @@ class Dorm extends React.Component {
                                 <ImageGallery items={imgdata}/>
                             </Tab>
                             <Tab eventKey="gallery2" title="미르관 나래관">
-                                <ImageGallery items={imgdata} />;
+                                <ImageGallery items={mirnar} />;
                             </Tab>
-                            <Tab eventKey="gallery3" title="소망관"></Tab>
+                            <Tab eventKey="gallery3" title="소망관">
+                                <ImageGallery items={somang} />;
+                            </Tab>
 
-                            <Tab eventKey="gallery4" title="아름관"></Tab>
-                            <Tab eventKey="gallery5" title="사랑관"></Tab>
-                            <Tab eventKey="gallery6" title="성실관"></Tab>
-                            <Tab eventKey="gallery7" title="신뢰관"></Tab>
-                            <Tab eventKey="gallery8" title="지혜관"></Tab>
-                            <Tab eventKey="gallery9" title="세종관"></Tab>
-                            <Tab eventKey="gallery10" title="진리관"></Tab>
+                            <Tab eventKey="gallery4" title="아름관">
+                                <ImageGallery items={areum} />;
+                            </Tab>
+                            <Tab eventKey="gallery5" title="사랑관">
+                            <ImageGallery items={sarang} />;
+                            </Tab>
+                            <Tab eventKey="gallery6" title="성실관">
+                            <ImageGallery items={sung} />;
+                            </Tab>
+                            <Tab eventKey="gallery7" title="신뢰관">  <ImageGallery items={da} />;</Tab>
+                            <Tab eventKey="gallery8" title="지혜관">  <ImageGallery items={jihye} />;</Tab>
+                            <Tab eventKey="gallery9" title="세종관">  <ImageGallery items={sejong} />;</Tab>
+                            <Tab eventKey="gallery10" title="진리관">  <ImageGallery items={jilli} />;</Tab>
                         </Tabs>
 
 

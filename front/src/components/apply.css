@@ -28,18 +28,11 @@
       opacity: 1;
       cursor: default;
       margin-top: 80.00px;
-      margin-right: 0.00px;
-      margin-bottom: 0.00px;
-      margin-left: 0.00px;
-      padding-top: 0.00px;
-      padding-right: 0.00px;
-      padding-bottom: 0.00px;
-      padding-left: 0.00px;
       overflow-x: auto;
       overflow-y: auto;
       background-color: rgba(255, 255, 255, 1);
       width: 1920.00px;
-    height: 1704.00px;
+    height: 1000px;
     left: 0px;
     top: 0px;
 
@@ -143,14 +136,6 @@
     transform-origin: center;
       opacity: 1;
       cursor: default;
-      margin-top: 0.00px;
-      margin-right: 0.00px;
-      margin-bottom: 0.00px;
-      margin-left: 0.00px;
-      padding-top: 0.00px;
-      padding-right: 0.00px;
-      padding-bottom: 0.00px;
-      padding-left: 0.00px;
       background-color: rgba(255, 255, 255, 0);
       text-align: left;
       letter-spacing: 0.00px;
@@ -168,7 +153,7 @@
       width: 126.00px;
     height: 25.00px;
     left: 355.00px;
-    top: 669.00px;
+    top: 500.00px;
 
 }
 
@@ -183,14 +168,6 @@
     transform-origin: center;
       opacity: 1;
       cursor: default;
-      margin-top: 0.00px;
-      margin-right: 0.00px;
-      margin-bottom: 0.00px;
-      margin-left: 0.00px;
-      padding-top: 0.00px;
-      padding-right: 0.00px;
-      padding-bottom: 0.00px;
-      padding-left: 0.00px;
       background-color: rgba(255, 255, 255, 0);
       text-align: left;
       letter-spacing: 0.00px;
@@ -208,7 +185,7 @@
       width: 33.00px;
     height: 20.00px;
     left: 355.00px;
-    top: 733.00px;
+    top: 550.00px;
 
 }
 
@@ -248,7 +225,7 @@
       width: 33.00px;
     height: 20.00px;
     left: 355.00px;
-    top: 775.00px;
+    top: 600.00px;
 
 }
 
@@ -288,7 +265,7 @@
       width: 33.00px;
     height: 20.00px;
     left: 355.00px;
-    top: 818.00px;
+    top: 650.00px;
 
 }
 
@@ -328,7 +305,7 @@
       width: 46.00px;
     height: 20.00px;
     left: 452.00px;
-    top: 733.00px;
+    top: 550.00px;
 
 }
 
@@ -368,7 +345,7 @@
       width: 86.00px;
     height: 20.00px;
     left: 452.00px;
-    top: 777.00px;
+    top: 600.00px;
 
 }
 
@@ -408,7 +385,7 @@
       width: 62.00px;
     height: 20.00px;
     left: 452.00px;
-    top: 822.00px;
+    top: 650.00px;
 
 }
 
@@ -448,7 +425,7 @@
       width: 17.00px;
     height: 20.00px;
     left: 355.00px;
-    top: 861.00px;
+    top: 700.00px;
 
 }
 
@@ -488,7 +465,7 @@
       width: 89.00px;
     height: 20.00px;
     left: 452.00px;
-    top: 868.00px;
+    top: 700.00px;
 
 }
 
@@ -528,7 +505,7 @@
       width: 131.00px;
     height: 25.00px;
     left: 1019.00px;
-    top: 669.00px;
+    top: 500.00px;
 
 }
 
@@ -568,7 +545,7 @@
       width: 66.00px;
     height: 20.00px;
     left: 1019.00px;
-    top: 721.00px;
+    top: 550.00px;
 
 }
 
@@ -608,7 +585,7 @@
       width: 66.00px;
     height: 20.00px;
     left: 1019.00px;
-    top: 771.00px;
+    top: 600px;
 
 }
 
@@ -648,7 +625,7 @@
       width: 62.00px;
     height: 20.00px;
     left: 1147.00px;
-    top: 719.00px;
+    top: 550.00px;
 
 }
 
@@ -687,8 +664,8 @@
       white-space: pre;
       width: 130.00px;
     height: 20.00px;
-    left: 1249.00px;
-    top: 719.00px;
+    left: 1200.00px;
+    top: 600.00px;
 
 }
 
@@ -728,7 +705,7 @@
       width: 46.00px;
     height: 20.00px;
     left: 1147.00px;
-    top: 765.00px;
+    top: 600.00px;
 
 }
 
@@ -988,7 +965,7 @@
       width: 1212.00px;
     height: 326.00px;
     left: 354.00px;
-    top: 1007.00px;
+    top: 850.00px;
 
 }
 
@@ -1028,7 +1005,7 @@
       width: 220.00px;
     height: 25.00px;
     left: 865.00px;
-    top: 1028.00px;
+    top: 800.00px;
 
 }
 
@@ -1068,7 +1045,7 @@
       width: 442.00px;
     height: 22.00px;
     left: 479.00px;
-    top: 1109.00px;
+    top: 900.00px;
 
 }
 
@@ -1108,7 +1085,7 @@
       width: 574.00px;
     height: 22.00px;
     left: 479.00px;
-    top: 1153.00px;
+    top: 950.00px;
 
 }
 
@@ -1148,7 +1125,7 @@
       width: 284.00px;
     height: 22.00px;
     left: 479.00px;
-    top: 1197.00px;
+    top: 1000.00px;
 
 }
 
@@ -1188,7 +1165,7 @@
       width: 768.00px;
     height: 22.00px;
     left: 479.00px;
-    top: 1241.00px;
+    top: 1050.00px;
 
 }
 
@@ -1219,7 +1196,7 @@
       width: 98.00px;
     height: 49.00px;
     left: 1435.00px;
-    top: 1264.00px;
+    top: 1100.00px;
 
 }
 
@@ -1542,7 +1519,7 @@
       width: 280.00px;
     height: 50.00px;
     left: 810.00px;
-    top: 1425.00px;
+    top: 1200.00px;
     border-radius: 10px;
 
 }
@@ -1583,7 +1560,7 @@
       width: 33.00px;
     height: 20.00px;
     left: 621.00px;
-    top: 725.00px;
+    top: 550.00px;
 
 }
 
@@ -1623,7 +1600,7 @@
       width: 49.00px;
     height: 20.00px;
     left: 617.00px;
-    top: 772.00px;
+    top: 600.00px;
 
 }
 
@@ -1663,7 +1640,7 @@
       width: 49.00px;
     height: 20.00px;
     left: 617.00px;
-    top: 818.00px;
+    top: 650.00px;
 
 }
 
@@ -1703,7 +1680,7 @@
       width: 62.00px;
     height: 20.00px;
     left: 719.00px;
-    top: 726.00px;
+    top: 550.00px;
 
 }
 
@@ -1743,7 +1720,7 @@
       width: 191.00px;
     height: 20.00px;
     left: 717.00px;
-    top: 771.00px;
+    top: 600.00px;
 
 }
 
@@ -1783,7 +1760,7 @@
       width: 134.00px;
     height: 20.00px;
     left: 718.00px;
-    top: 818.00px;
+    top: 650.00px;
 
 }
 
@@ -1823,7 +1800,7 @@
       width: 66.00px;
     height: 20.00px;
     left: 614.00px;
-    top: 868.00px;
+    top: 700.00px;
 
 }
 
@@ -1863,7 +1840,7 @@
       width: 47.00px;
     height: 20.00px;
     left: 719.00px;
-    top: 868.00px;
+    top: 700.00px;
 
 }
 
